@@ -4,25 +4,88 @@
     box-sizing: border-box;
   }
   
-  body { font-family: sans-serif; }
+  body { font-family: sans-serif; 
+  background: #D9D9D9;
   
+  }
+
+  #nav{
+    display: flex;
+    flex-direction: row;
+    margin-left: 71%;
+    margin-top: 1.5%;
+   
+  }
+ a{
+  text-decoration: none;
+ }
+
+  .flexItem{
+    display: flex;
+    width:88%;
+    margin-top: 5%;
+    margin-left: 7%;
+    height: 500px;
+    background-color:#E0BFBF;
+  }
+
+  .flexBox{
+    display: flex;
+    padding-left: 200px;
+    padding-top: 100px;
+  }
+  .lineClass{
+    border: 3px solid black;
+    width: 300px;
+  }
+  .fullName{
+    font-size: xx-large;
+    padding: 150px;
+    /* padding-top: 100px;
+    padding-left: 250px; */
+  }
+.profilePic{
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px 1px 5px 5px  #f6f6f6;;
+}
+
+.gitState{
+  width: auto;
+  height: auto;
+}
+
+.about{
+  padding: 100px;
+}
+.aboutMePara{
+text-align: justify;
+font-size: 16px;
+}
+ 
+  li{
+   list-style: none;
+   margin-left: 25px;
+  }
+ 
   .gallery {
-    background: #EEE;
+    margin-top: 100px;
+    background-color:#E0BFBF;
   }
   
   .gallery-cell {
-    width: 66%;
-    height: 500px;
+    width: 55%;
+    height: 400px;
     margin-right: 10px;
-    background: #8C8;
-    counter-increment: gallery-cell;
+    background-color:#E0BFBF;
+    /* counter-increment: gallery-cell; */
   }
   
   /* cell number */
   .gallery-cell:before {
     display: block;
-    text-align: center;
-    content: counter(gallery-cell);
+    /* text-align: center;
+    content: counter(gallery-cell); */
     line-height: 200px;
     font-size: 80px;
     color: white;
