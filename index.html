@@ -25,9 +25,30 @@
           </li>
     </nav>
     <div class="flexItem">
+      <div class="flexi">
+        <h3>Sample App Password Generator</h3>
+        <div class="flex-box">
+            <label>Input Range: <input class="inputNum" type="range" min="4" max="95" onchange="inputV()" value= "12"/></label>
+          
+                <h4 class="settings">Password Length: 12 </h4>
+                <label>Letters<input class="letters radioIn" type="checkbox" checked /></label>
+                <label>Mixed<input class="mixed radioIn" type="checkbox" /></label>
+                <label>Capital Letters<input class="cap radioIn" type="checkbox" /></label>
+                <label>Numbers<input class="nums radioIn" type="checkbox"  /></label>
+              
+                <button class="copyBtn password" >Generate Password</button>
+                <input id="myInput" class="result" placeholder="Generated Password" />
+                <button class="copyBtn" onclick="copy()">Copy Password</button>
+                <button class="reset" onclick="reset()">Reset</button>
+          
+           
+       </div>
+      <h5>Generate your password here and use where ever you like.</h5>
+    </div>
         <div class="fullName">
             <h2>I'M</h2>
             <h2>Ahammed Saad</h2>
+            <h2>Welcome to MY PAGE</h2>
             <h2 class="lineClass"></h2>
             <p>Software Developer</p>
         </div>
@@ -36,12 +57,25 @@
          <a href="./aboutme.html"><img class="profilePic" src="./Images/ahammedSaad_profile_pic.jpeg" alt="Profile pic"/></a>   
        
     </div>
-    <div class="contactDiv">
-        <a class="conFlex" href="">Email</a>
-        <a class="conFlex" href="">GitHub</a>
-        <a class="conFlex" href="">Mobile</a>
-        <a class="conFlex" href="">Whatsapp</a>
+    <div class="contactDiv nav">
+      <a class="conFlex" href="https://www.linkedin.com/in/ahammed-saad-5341b3231/">
+        Linkedin
+      </a>
+      <a class="conFlex" href="https://github.com/asaad227">
+        github
+      </a>
+      <a class="conFlex" href="https://twitter.com/a_saad227">
+        twitter
+      </a>
+      <a class="conFlex" href="mailto:a.saad227@gmail.com? subject=subject text">
+       Gmail
+      </a>
+      <a class="conFlex" href="mailto:a.saad227@yahoo.com? subject=subject text">
+      Yahoo
+      </a>
+       <p class="allRight">All right reserve <a href="https://twitter.com/a_saad227">@asaad227</a></p>
     </div>
   </div>
 </body>
+<script src="./portfolio.js"></script>
 </html>

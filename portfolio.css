@@ -35,11 +35,11 @@
 
   .flexItem{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 20px;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 600px;
     background-color:#E0BFBF;
   }
 
@@ -49,13 +49,19 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    margin-top: 50px;
+  
     
   }
 
   .conFlex{
     margin-left: 20px;
    
+  }
+
+  .allRight{
+    margin-top: 50px;
+    font-style: oblique;
+    color: rgb(116, 91, 59);
   }
   .lineClass{
     border: 3px solid black;
@@ -67,14 +73,18 @@
   }
 
   .fullName{
-    font-size: xx-large;
-    padding: 150px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-size: large;
+   
   }
 .profilePic{
-  width: 250px;
+  display: flex;
   height: 250px;
-  box-shadow: 5px 1px 5px 5px  #f6f6f6;;
+  box-shadow: 5px 1px 5px 5px #f6f6f6;
 }
+
 
 .gitState{
   display: flex;
@@ -115,8 +125,66 @@ font-size: 16px;
     font-size: 80px;
     color: white;
   }
-
+  .flexi{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .flexi, .profilePic, .fullName{
+    margin-right: 50px;
+  }
+  
+  .flex-box{
+      display: flex;
+      width: 250px;
+      height: 450px;
+      flex-direction: column;
+      font-style: oblique;
+      /* padding: 5px; */
+      box-shadow: 3px 3px 3px 3px #888888;
+      border: 1px solid #e6e6e6;
+      border-radius: 5px;
+      /* margin: 15px 10px 15px 10px; */
+  }
+  .settings{
+    margin: 5px;
+    font-style: oblique;
+    color: rgb(33, 20, 5);
+  }
+  
+  label{
+    color: rgb(19, 12, 2);
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    box-shadow: 3px 3px 3px 3px #888888;
+    background-color: bisque;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  #myInput{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px #888888;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+  }
+  .copyBtn, .reset{
+    padding: 5px;
+    box-shadow: 3px 3px 3px 3px #888888;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .radioIn{
+    display: flex;
+    float: right;
+  }
+  
   @media screen and (max-width: 700px) {
+    .flexi{
+      min-height: fit-content;
+    }
     .lineClass{
       width: 100px;
     }
@@ -132,6 +200,15 @@ font-size: 16px;
     .profilePic{
       width: 150px;
       height: 150px;
+    }
+
+    .gallery{
+      margin-top: 20px;
+    }
+
+    .gallery-cell{
+      width: 35%;
+      height: 200px;
     }
 
   }
