@@ -182,6 +182,13 @@ font-size: 16px;
   }
   
   @media screen and (max-width: 700px) {
+    .flexItem{
+      display: flex;
+      justify-content: flex-end;
+      align-items: stretch;
+      height: 1000px;
+      flex-direction: column-reverse;
+    }
     .flexi{
       min-height: fit-content;
     }
@@ -193,13 +200,16 @@ font-size: 16px;
     }
 
     .fullName{
-      font-size: 24px;
-      padding: 20px;
+      display: flex;
+      font-size: 16px;
+      padding: 10px;
+  
     }
 
     .profilePic{
-      width: 150px;
-      height: 150px;
+      margin: 20px;
+      width: 100px;
+      height: 100px;
     }
 
     .gallery{
@@ -207,8 +217,10 @@ font-size: 16px;
     }
 
     .gallery-cell{
-      width: 35%;
-      height: 200px;
+      display: flex;
+      margin-top: 100px;
     }
-
+.contactDiv{
+  margin-top: 50px;
+}
   }
